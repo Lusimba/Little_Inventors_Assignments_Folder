@@ -5,6 +5,7 @@ def factorial(number):
         return 1
     else:
         y = number*factorial(number-1) 
+        print(y)
         return y
 print(factorial(x) )
           
