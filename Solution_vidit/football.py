@@ -29,4 +29,3 @@ print(player_8.greating())
 print(player_9.greating())
 print(player_10.greating())
 print(player_11.greating())
-
