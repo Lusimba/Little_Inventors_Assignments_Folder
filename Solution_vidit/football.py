@@ -6,9 +6,9 @@ class Player():
         self.number = number
         self.club = club
     def greating(self):
-        return "I am {} {} I am a {} My jersey number is {} I play for {}".format(self.firstName,self.lastName,\
+        return "I am {}.{}, I am a {}, My jersey number is {}, I play for {}".format(self.firstName,self.lastName,\
         self.position,self.number,self.club)
-player_1 = Player("D.de","Gea","goalkeeper",1,"Manchester United")
+player_1 = Player("D","de Gea","goalkeeper",1,"Manchester United")
 player_2 = Player("A","Young","defender",18,"Manchester United")
 player_3 = Player("V","lindelof","defender",2,"Manchester United")
 player_4 = Player("P","Jones","defender",4,"Manchester United")
