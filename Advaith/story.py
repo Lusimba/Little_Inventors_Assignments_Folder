@@ -10,7 +10,7 @@ print("3. Bow")
 print("4. Sword")
 print("5. Gun")
 a = int(input("Choose your bloody weapon  "))
-try:
+if a < 100:
     print("Ok. %d is chosen " %(a))
     print("Which shield do you choose")
     b = int(input("1 = metal, 2 = wooden, 3 = no shield.  "))
@@ -271,7 +271,7 @@ try:
             exit("Tata, bye-bye")
     else:
         print("Sorry cant help with that")
-except Exception as w:
+else:
     print("Sorry can't help")
     print("Thanks for playing this game", d)
     exit("Tata, bye-bye")
@@ -286,12 +286,12 @@ if l == 1:
     print("Ok training")
     print("He'll train in 12 days(in our world 12 seconds)")
     time.sleep(1)
-    n = list(n)
     for m in range(0, 12):
-        print(n)
+        n = list(n)
         time.sleep(1)
         n[m] = '-'
-    "".join(n)
+        n = str(n)
+        print(n, end="\r")
     print("Done training")
     print("You know-;")
     print("sword shield, sword block, sword clash, cut arrow, sword throw, sword jump and sword slash")
@@ -301,7 +301,7 @@ if l == 1:
     print("1 - run far away")
     print("2 - stay and fight")
     print("3 - Tell human-evils name 5 times")
-    o = int(input("What is your decision"))
+    o = int(input("What is your decision   "))
     if o == 1:
         print("Ok. Running")
         print("You will jump out of the window and jump")
@@ -355,11 +355,11 @@ elif l == 2:
     print("He'll train in 12 days(in our world 12 seconds)")
     time.sleep(1)
     for r in range(0, 12):
-        print(q, end = "/r")
+        q = str(q)
+        print(q, end = "\r")
         time.sleep(1)
         q = list(q)
         q[r] = '-'
-        "".join(q)
     print("Done training")
     print("You know-;")
     print("sword shield, shield block, shield strike, cut arrow, shield throw, shield jump and shield slash")
@@ -369,7 +369,7 @@ elif l == 2:
     print("1 - run far away")
     print("2 - stay and fight")
     print("3 - Tell human-evils name 5 times")
-    s = int(input("What is your decision"))
+    s = int(input("What is your decision   "))
     if s == 1:
         print("Ok. Running")
         print("You will jump out of the window and jump")
@@ -441,9 +441,9 @@ print("2=[Disagree and kill them all]")
 print("3=[Run away]")
 v = int(input("Choose one  "))
 if v == 1:
-    d = d.lowercase()
+    d = d.lower()
     x = list(d)
-    y = len(d)
+    y = (len(d)-1)
     if x[y] == 'a':
         print("Good girl :D")
     elif x[y] == 'e':
@@ -478,15 +478,15 @@ print("Ok")
 print("You will continue walking")
 time.sleep(2)
 print("The you see a couple of guards")
-aa = int(input("1-bring 'em down, 2-die, 3-run"))
+aa = int(input("1-bring 'em down, 2-die, 3-run  "))
 if aa == 1:
     print("Ok trying")
     time.sleep(2)
     print("You got half down and your patner got the other half")
     print("You go in")
-    print("You see a minion of human-evil(h-e)")
+    print("You see a minion of human-evil")
     print("What do you do")
-    ab = int(input("1-bring him down, 2-die, 3-run"))
+    ab = int(input("1-bring him down, 2-die, 3-run  "))
     if ab != 1:
         print("Ok")
         if ab ==2:
@@ -551,7 +551,7 @@ if ad == 1:
         ae = ae+1
         print(u)
         af = input("What is the code  ")
-        af = af.lowercase()
+        af = af.lower()
         if af == "do it fifteen days after tommorow":
             print("It is correct!")
             print("Bravo!")
