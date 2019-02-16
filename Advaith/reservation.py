@@ -5,7 +5,7 @@ lop = []
 loa = []
 count = 15
 size = 0.0
-print("Welcome to Little Inventors travels")
+print("WELCOME TO -; LITLLE INVENTORS TRAVELS")
 print("___________________________________")
 
 class reservation:
