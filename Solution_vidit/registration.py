@@ -107,7 +107,7 @@ if __name__ == "__main__":
     e = tk.IntVar()
     f = tk.IntVar()
     g = tk.IntVar()
-    C1 = tk.Checkbutton(gui, text = "French fries", variable = h,onvalue = 1 ,offvalue = 6)
+    C1 = tk.Checkbutton(gui, text = "French-fries", variable = h, onvalue = 1 ,offvalue = 6)
     C2 = tk.Checkbutton(gui, text = "Burger", variable = d, onvalue = 2 ,offvalue = 7)
     C3 = tk.Checkbutton(gui, text = "Ice-cream", variable = e, onvalue = 3 ,offvalue = 8)
     C4 = tk.Checkbutton(gui, text = "Pizza", variable = f, onvalue = 4 ,offvalue = 9)
