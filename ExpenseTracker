@@ -1,0 +1,7 @@
+Create a GUI expense tracker program that performs the following functions.
+1. Keeps track of shopping spendings for the family
+2. Calculates the total expense of bills to be paid at the end of the month. 
+3. Factors in discounts and calculates the total amount saved at the end of the month. 
+4. Displays the most frequently visited stores/shops.
+5. Create a report of this information in a Microsoft Word file format and store it in your Python files folder. 
+Upload it to GitHub. 
