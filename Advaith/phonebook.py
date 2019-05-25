@@ -5,7 +5,6 @@ co =0
 ts =0
 ce = 0
 nl = int(input("How many changes do you want to make to the phone book "))
-print("   ", "  ")
 for l in range(0, nl):
 	print("The phone book has these numbers", pb)
 	print("1 = Add a number")
