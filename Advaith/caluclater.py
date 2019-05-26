@@ -28,26 +28,26 @@ for x in range(z):
 		print("the power of ", b, " and ", c, " is ", b^c)
 	else:
 		print("Sorry I can not help you")
-import tkinter
-root = tkinter.Tk()
+import tkinter as tk
+root = tk.Tk()
 root.title("#########################  SIMPLE  CALUCLATOR  #########################")
 var = 0
 m = 0
 if m == 0:
 	def B1(inp, var):
 		var = var + inp
-		L = tkinter.Label(root, text = var)
+		L = tk.Label(root, text = var)
 		L.pack(side = "top")
 		return
 	def plus():
 		m = 1
 		return m
 	def equal(var):
-		L = tkinter.Label(root, text = var)
+		L = tk.Label(root, text = var)
 		L.pack(side = "top")
-	B_1 = tkinter.Button(root, text = "1", width = 30, height = 2, command = B1(1, var))
-	B_2 = tkinter.Button(root, text = "+", width = 30, height = 2, command = plus)
-	B_3 = tkinter.Button(root, text = "=", width = 30, height = 2, command = equal(var))
+	B_1 = tk.Button(root, text = "1", width = 30, height = 2, command = B1(1, var))
+	B_2 = tk.Button(root, text = "+", width = 30, height = 2, command = plus)
+	B_3 = tk.Button(root, text = "=", width = 30, height = 2, command = equal(var))
 	B_1.pack(side = "bottom")
 	B_2.pack(side = "bottom")
 	B_3.pack(side = "bottom")
@@ -56,14 +56,14 @@ elif m == 1:
 	def B1(inp, vari):
 		vari = vari + inp
 		globals(vari)
-		L = tkinter.Label(root, textvariable = vari)
+		L = tk.Label(root, textvariable = vari)
 		L.pack(side = "top")
 		return
 	def equal(var, vari):
-		L = tkinter.Label(root, textvariable = var)
+		L = tk.Label(root, textvariable = var)
 		L.pack(side = "Top")
-	B_1 = tkinter.Button(root, text = "1", width = 30, height = 2, command = B1(1, vari))
-	B_3 = tkinter.Button(root, text = "=", width = 30, height = 2, command = equal(var, vari))
+	B_1 = tk.Button(root, text = "1", width = 30, height = 2, command = B1(1, vari))
+	B_3 = tk.Button(root, text = "=", width = 30, height = 2, command = equal(var, vari))
 	B_1.pack()
 	B_3.pack()
 else:
