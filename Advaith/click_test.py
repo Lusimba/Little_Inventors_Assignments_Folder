@@ -13,6 +13,7 @@ def enterpress():
         st = time.time()
         print("click speed = {} clicks/second".format(10/(st-et)))
         a = 0
+        tex.set(a)
 tex = tk.IntVar()
 tk.Label(root, textvariable = tex).grid()
 tk.Button(root, text = "Click Me!!!", height = 10, width = 20,command = enterpress).grid()

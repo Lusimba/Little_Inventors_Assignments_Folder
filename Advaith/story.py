@@ -37,7 +37,7 @@ print("Now, he wants to rule Earth")
 print("The world depends on you,", j)
 print("No one should speak 'his' name. We call him 'human-evil'")
 print("Human-evil's name is Ad-A-Adv-Advaith Basi-Basireddy")
-print("If you speak human-evils name 5 times you you will be cursed")
+print("If you speak human-evils name 5 times you will be cursed")
 print("Oh no human-evils minion's minion is coming. Tata bye-bye!")
 print("  ")
 print("  ")
@@ -425,10 +425,6 @@ else:
     print("When you are going Bablu thinks you are a spy of human-evil")
     print("Then he kills you by stabbing your stomach while going")
     print("Thanks for playing %s or %s" %(d, j))
-u ={'*':'a', '&':'b', ')':'c', '(':'d', '^':'e', '@':'f', '%':'g', \
-    '#':'h', '!':'i', '$':'j', ',':'k', '/':'l', '|':'m', '}':'n', \
-    ']':'o', ':':'p', '[':'q', '`':'r', '~':'s', '-':'t', '_':'u', \
-    '+':'v', '=':'w', '<':'x', '?':'y', '>':'z'}
 print("The thing is written as -; (] !- @!@-^^} (*?~ *@-^` -]||]`]= for human-evil")
 print("Bablu said that the only way to crack it is to get it from human-evil's secret hide out")
 print("Then another person asks ,'But where is his hide out'")
@@ -541,13 +537,11 @@ if ad == 1:
     ag = time.time()
     print("Ok picked")
     print("It says -;")
-    print(u)
     print("The code is -;")
     print("(] !- @!@-^^} (*?~ *@-^` -]||]`]=")
     ae = 0
     while(ae < 1000):
         ae = ae+1
-        print(u)
         af = input("What is the code  ")
         af = af.lower()
         if af == "do it fifteen days after tommorow":
