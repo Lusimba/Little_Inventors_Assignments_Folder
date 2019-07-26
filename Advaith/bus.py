@@ -1,5 +1,4 @@
 import time
-
 print("___________________________________")
 lop = []
 loa = []
@@ -7,7 +6,6 @@ count = 15
 size = 0.0
 print("WELCOME TO -; LITLLE INVENTORS TRAVELS")
 print("___________________________________")
-
 class reservation:
     def __init__(self, human, year, arrive, arrivetime, departime, tickets, pay, cost):
         self.start = 'Hyderabad'
@@ -47,52 +45,43 @@ print("1 = 8 am, 2 = 9 am, 3 = 10 am, 4 = 11 am, 5 = 12 pm, 6 = 1 pm, 7 = 2 pm .
 departure = int(input("Pick the number following the time you want to start  "))
 
 for loop in range(0, people):
-    name = input("What's your name  ")
+    name = input("person: {} What's your name  ".format(loop+1))
     age = int(input("How many years are you  "))
+    print("  ")
     if age > 15:
         size += 1.0
-
     elif age < 15:
         if age > 5:
             size += 0.5
-    
     lop.append(name)
     loa.append(age)
     count -= 1
-
 if count <= 0:
     print("Sorry, we don't have those many tickets")
-
-if arrivation == 'delhi':
+if arrivation == "delhi":
     amount = size * 10000
-    arriving = departure + 10
-
-elif arrivation == 'mumbai':
+    arriving = departure + 20
+elif arrivation == "mumbai":
     amount = size * 8000
-    arriving = departure + 8
-
-elif arrivation == 'pune':
+    arriving = departure + 15
+elif arrivation == "pune":
     amount = size * 4000
-    arriving = departure + 4
-
-elif arrivation == 'chennai':
+    arriving = departure + 13
+elif arrivation == "chennai":
     amount = size * 6000
-    arriving = departure + 6
-
-elif arrivation == 'bangalore':
+    arriving = departure + 10
+elif arrivation == "bangalore":
     amount = size * 2000
-    arriving = departure + 2
-
+    arriving = departure + 7
 else:
     exit("There was a problem. Can you please try it again")
-
 print("Smartcard")
 print("Fare")
 print("Money")
 payer = input("How do you want to pay  ")
-
+print(" ")
 for loop_2 in range(0, people):
-    printing_1 = reservation(lop[loop_2], loa[loop_2], arrivation, arriving, departure, 15-count, payer, amount)
+    printing_1 = reservation(lop[loop_2], loa[loop_2], arrivation, arriving, departure+7, 15-count, payer, amount)
     printing_1.printer()
     print(" ")
     print(" ")
